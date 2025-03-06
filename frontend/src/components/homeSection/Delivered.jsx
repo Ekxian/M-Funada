@@ -9,15 +9,15 @@ const Delivered = () => {
     <div className="container mt-5">
       {/* ROW 1 TITLE */}
       <div className="row d-flex justify-content-between align-items-center">
-        <h2 className="col-lg-3">
+        <h1 className="col-lg-3">
           <strong>
             Best <span style={{ color: "#E9762B" }}>Delivered</span> Categories
           </strong>
-        </h2>
+        </h1>
         <p className="col-lg-3">
           <small>
             Here are some of our best distributed categories.
-            <span style={{ color: "#E9762B" }}>Order now!</span>
+            <span style={{ color: "#E9762B" }}> Order now!</span>
           </small>
         </p>
       </div>
@@ -26,7 +26,7 @@ const Delivered = () => {
       <div className="row my-5 justify-content-center">
         {/* CARD 1 */}
         <div className="col-lg-3 col-md-4 col-sm-6 col-12 mb-2 d-flex justify-content-center">
-          <div className="card h-100" style={{ width: "18rem" }}>
+          <div className="card h-100 shadow" style={{ width: "18rem" }}>
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-pdH0qh12XweymWNkJZdjV-NAovekfQeaKw&s"
               className="card-img-top"
@@ -57,7 +57,7 @@ const Delivered = () => {
 
         {/* CARD 2 */}
         <div className="col-lg-3 col-md-4 col-sm-6 col-12 mb-2 d-flex justify-content-center">
-          <div className="card h-100" style={{ width: "18rem" }}>
+          <div className="card h-100 shadow" style={{ width: "18rem" }}>
             <img
               src="https://hips.hearstapps.com/hmg-prod/images/chicken-empanada-1jpg-1651248642.jpg?crop=0.6794177386594448xw:1xh;center,top&resize=1200:*"
               className="card-img-top"
@@ -88,7 +88,7 @@ const Delivered = () => {
 
         {/* CARD 3 */}
         <div className="col-lg-3 col-md-4 col-sm-6 col-12 mb-2 d-flex justify-content-center">
-          <div className="card h-100" style={{ width: "18rem" }}>
+          <div className="card h-100 shadow" style={{ width: "18rem" }}>
             <img
               src="https://salimaskitchen.com/wp-content/uploads/2023/08/DSC01303.jpg"
               className="card-img-top"

@@ -8,6 +8,8 @@ import { MdOutlineRestaurantMenu } from "react-icons/md";
 import "./css/home.css";
 import Delivered from "../components/homeSection/Delivered";
 import Order from "../components/homeSection/Order";
+import Taste from "../components/homeSection/Taste";
+import Mapa from "../components/homeSection/Mapa";
 
 const Home = () => {
   return (
@@ -51,6 +53,8 @@ const Home = () => {
 
       <Delivered />
       <Order />
+      <Taste />
+      <Mapa />
 
       <Footer />
     </div>
