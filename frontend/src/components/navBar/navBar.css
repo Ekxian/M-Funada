@@ -1,0 +1,63 @@
+.navbar-top {
+  z-index: 1000; /* Ensure it stays on top of other elements */
+  height: 60px;
+}
+
+/* Ensure the container uses flex properties */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+}
+
+/* Remove the default border */
+.navbar-toggler {
+  border: none;
+  background: transparent;
+}
+
+/* Customize the icon's color */
+.navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgb(233, 118, 43)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.btn-order {
+  border-color: #e9762b !important;
+  background-color: #e9762b !important;
+  color: #e9762b;
+}
+
+.btn-order:hover {
+  /* background-color: #f0690f !important; */
+  background-color: transparent !important;
+  border-color: #e9762b;
+  color: #e9762b;
+}
+
+.nav-item-css {
+  border-bottom: solid transparent;
+  transition: border-bottom 0.3s ease-in-out, background 0.3s ease-in-out,
+    -webkit-text-fill-color 0.3s ease-in-out;
+}
+
+.nav-item-css:hover {
+  border-bottom: solid #e2762f !important;
+
+  /* gradient text */
+  background: rgb(233, 43, 43);
+  background: linear-gradient(
+    90deg,
+    rgba(233, 43, 43, 1) 35%,
+    rgba(233, 151, 43, 1) 66%,
+    rgba(213, 233, 43, 1) 98%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Flexbox for navbar to handle logo and toggle */
+.navbar-brand,
+.navbar-toggler {
+  display: flex;
+  align-items: center; /* Aligns items vertically */
+}

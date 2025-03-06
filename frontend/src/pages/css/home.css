@@ -1,0 +1,12 @@
+.btn-menu {
+  border-color: #e9762b !important;
+  background-color: #e9762b !important;
+  color: #e9762b;
+}
+
+.btn-menu:hover {
+  background-color: #a2470a !important;
+  /* background-color: transparent !important; */
+  border-color: #e9762b;
+  color: #e9762b;
+}
