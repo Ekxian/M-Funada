@@ -1,0 +1,14 @@
+.group-image-height {
+  height: 100vh; /* Adjust this value to set the desired height */
+  object-fit: cover; /* This ensures the image covers the entire area */
+}
+
+.group-image-overlay {
+  position: absolute; /* Position it absolutely within the carousel item */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.629); /* Semi-transparent black */
+  z-index: 1; /* Make sure the overlay is above the image */
+}

@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Element, scroller } from "react-scroll";
+import { useLocation } from "react-router-dom";
+
 import NavBar from "../components/navBar/NavBar";
 import ImageCarousel from "../components/imageCarousel/ImageCarousel";
 import Footer from "../components/footer/Footer";
@@ -12,6 +15,18 @@ import Taste from "../components/homeSection/Taste";
 import Mapa from "../components/homeSection/Mapa";
 
 const Home = () => {
+  // If navigating from another page with a hash like "#find-us"
+  useEffect(() => {
+    if (location.hash === "#find-us") {
+      // Use scroller from react-scroll to scroll smoothly
+      scroller.scrollTo("find-us", {
+        duration: 500,
+        delay: 100,
+        smooth: true,
+        offset: -70, // adjust for fixed headers if needed
+      });
+    }
+  }, [location]);
   return (
     <div>
       <NavBar />
@@ -54,7 +69,11 @@ const Home = () => {
       <Delivered />
       <Order />
       <Taste />
-      <Mapa />
+
+      {/* Fin Us Section here is the Mapa */}
+      <Element id="find-us">
+        <Mapa />
+      </Element>
 
       <Footer />
     </div>

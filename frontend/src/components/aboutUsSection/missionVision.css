@@ -1,0 +1,5 @@
+.content-box {
+  width: 150px;
+  height: 150px;
+  aspect-ratio: 1 / 1; /* Ensures the box is always square */
+}

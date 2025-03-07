@@ -21,12 +21,18 @@ const Footer = () => {
               <strong>Follow us on</strong>
             </h3>
             <div className="d-flex gap-2">
-              <div
-                className="bg-white rounded-circle d-flex justify-content-center align-items-center"
-                style={{ width: "25px", height: "25px" }}
+              <a
+                href="https://www.facebook.com/profile.php?id=61573713874153"
+                target="_blank"
+                className="text-decoration-none"
               >
-                <FaFacebookF className="text-dark" />
-              </div>
+                <div
+                  className="bg-white rounded-circle d-flex justify-content-center align-items-center"
+                  style={{ width: "25px", height: "25px" }}
+                >
+                  <FaFacebookF className="text-dark" />
+                </div>
+              </a>
               <div
                 className="bg-white rounded-circle d-flex justify-content-center align-items-center"
                 style={{ width: "25px", height: "25px" }}
