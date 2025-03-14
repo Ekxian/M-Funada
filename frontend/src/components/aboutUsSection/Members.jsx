@@ -11,9 +11,9 @@ const Members = () => {
         </strong>
       </h1>
 
-      {/*  row 1 */}
-      <div className="row d-flex justify-content-center mx-5 px-5">
-        {/*: member 1 */}
+      {/* row 1 */}
+      <div className="row d-flex justify-content-center text-center mx-5">
+        {/* member 1 */}
         <div className="col-lg-3 col-md-6 col-sm-12">
           <img
             src="https://i.pinimg.com/736x/fe/ef/c3/feefc35e4614590ea6ee2c44252a14ae.jpg"
@@ -21,7 +21,7 @@ const Members = () => {
             style={{ width: "14rem", height: "14rem", objectFit: "cover" }}
             alt="..."
           />
-          <p style={{ color: "#E9762B" }}>
+          <p className="" style={{ color: "#E9762B" }}>
             <strong>Mary Ayen G. Opague</strong>
             <br />
             <small>Thesis Leader</small>
@@ -69,8 +69,8 @@ const Members = () => {
       </div>
 
       {/*  row 2 */}
-      <div className="row d-flex justify-content-center mx-5 px-5">
-        {/*: member 1 */}
+      <div className="row d-flex justify-content-center text-center lg-px-5 mx-5">
+        {/* member 1 */}
         <div className="col-lg-3 col-md-6 col-sm-12">
           <img
             src="https://i.pinimg.com/736x/fe/ef/c3/feefc35e4614590ea6ee2c44252a14ae.jpg"
@@ -78,7 +78,7 @@ const Members = () => {
             style={{ width: "14rem", height: "14rem", objectFit: "cover" }}
             alt="..."
           />
-          <p style={{ color: "#E9762B" }}>
+          <p className="" style={{ color: "#E9762B" }}>
             <strong>Mary Ayen G. Opague</strong>
             <br />
             <small>Thesis Leader</small>
@@ -126,8 +126,8 @@ const Members = () => {
       </div>
 
       {/*  row 3 */}
-      <div className="row d-flex justify-content-center mx-5 px-5">
-        {/*: member 1 */}
+      <div className="row d-flex justify-content-center text-center lg-px-5 mx-5">
+        {/* member 1 */}
         <div className="col-lg-3 col-md-6 col-sm-12">
           <img
             src="https://i.pinimg.com/736x/fe/ef/c3/feefc35e4614590ea6ee2c44252a14ae.jpg"

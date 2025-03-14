@@ -1,6 +1,8 @@
 .navbar-top {
-  z-index: 1000; /* Ensure it stays on top of other elements */
+  z-index: 1020; /* Ensure it stays on top of other elements */
   height: 60px;
+
+  transition: background-color 0.3s ease-in-out;
 }
 
 /* Ensure the container uses flex properties */
@@ -24,7 +26,7 @@
 .btn-order {
   border-color: #e9762b !important;
   background-color: #e9762b !important;
-  color: #e9762b;
+  color: #fff;
 }
 
 .btn-order:hover {
@@ -60,4 +62,12 @@
 .navbar-toggler {
   display: flex;
   align-items: center; /* Aligns items vertically */
+}
+
+.scrolled {
+  background-color: rgb(255, 255, 255) !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.316);
+  max-width: 90%; /* Adjust width */
+  margin: 0 auto; /* Centers it with equal margins */
+  border-radius: 10px; /* Optional: Adds rounded corners */
 }

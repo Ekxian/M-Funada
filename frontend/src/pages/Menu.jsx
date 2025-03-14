@@ -1,9 +1,21 @@
 import React from "react";
+import { Element } from "react-scroll";
 
-const Menu = () => {
+import Hero from "../components/menuSection/Hero";
+import Foods from "../components/menuSection/Foods";
+import Footer from "../components/footer/Footer";
+import ScrollTop from "../components/scrollUp/ScrollTop";
+
+const Menu = ({ cartItems, handleAddItem, handleSubtractItem }) => {
   return (
     <div>
-      <h1>Menu</h1>
+      <Hero />
+      <Foods
+        cartItems={cartItems}
+        handleAddItem={handleAddItem}
+        handleSubtractItem={handleSubtractItem}
+      />
+      <Footer />
     </div>
   );
 };

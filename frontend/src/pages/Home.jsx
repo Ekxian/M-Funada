@@ -29,7 +29,7 @@ const Home = () => {
   }, [location]);
   return (
     <div>
-      <NavBar />
+      {/* <NavBar /> */}
       <div className="position-relative">
         <ImageCarousel />
         <div

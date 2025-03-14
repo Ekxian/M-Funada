@@ -1,16 +1,37 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link as RouterLink, useLocation } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll"; // react-scroll Link
 import "./navBar.css";
 import { BiSolidBasket } from "react-icons/bi";
 
-const NavBar = () => {
+const NavBar = ({ cartCount }) => {
   const location = useLocation();
   const isHome = location.pathname === "/";
 
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="navbar-top navbar navbar-expand-lg position-absolute w-100 mt-3">
-      <div className="container py-1 px-5">
+    <nav
+      // className={`navbar-top navbar navbar-expand-lg w-100 mt-3 fixed-top ${
+      //   scrolled ? "scrolled" : "bg-transparent"
+      // }`} fixed-top
+
+      className="navbar-top navbar navbar-expand-lg position-absolute fixed-top w-100 mt-3"
+    >
+      <div className="container py-1 px-5 shadow rounded">
         <RouterLink className="navbar-brand" to="/">
           <h3 style={{ color: "#E9762B" }}>
             <strong>M'Funada</strong>
@@ -69,14 +90,22 @@ const NavBar = () => {
           </ul>
           <RouterLink to="/mfunada/orders">
             <button
-              className="btn-order btn rounded-pill"
+              className="btn-order btn rounded-pill position-relative"
               type="button"
-              style={{ color: "#E9762B" }}
             >
-              <div className="btn-text d-flex align-items-center mx-1 text-white">
+              <div className="btn-text d-flex align-items-center mx-1">
                 <BiSolidBasket className="fs-4 me-2" />
                 Orders
+                {cartCount > 0 && (
+                  <span
+                    className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                    style={{ fontSize: "0.8rem" }}
+                  >
+                    {cartCount}
+                  </span>
+                )}
               </div>
+              {/* Display the cart count as a badge */}
             </button>
           </RouterLink>
         </div>

@@ -8,7 +8,7 @@ import Members from "../components/aboutUsSection/Members";
 const AboutUs = () => {
   return (
     <div>
-      <NavBar />
+      {/* <NavBar /> */}
       <Hero />
       <MissionVision />
       <Members />
