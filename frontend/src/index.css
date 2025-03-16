@@ -13,8 +13,11 @@
   -moz-osx-font-smoothing: grayscale; */
 }
 
-html {
+html,
+body {
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 /* a {
   font-weight: 500;

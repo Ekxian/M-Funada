@@ -1,0 +1,41 @@
+.form-control:focus {
+  box-shadow: 0 0 5px rgba(233, 118, 43, 0.8); /* Change to your desired color */
+  border-color: #e9762b; /* Optional: Change border color */
+  outline: none; /* Removes default outline */
+}
+
+/* Default border */
+.form-check {
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Glow effect when active */
+.active-payment {
+  box-shadow: 0 0 5px rgba(233, 118, 43, 0.8); /* Change to your desired color */
+  border-color: #e9762b; /* Optional: Change border color */
+}
+
+/* Hide default radio button */
+.form-check-input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #e9762b;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Custom checked state */
+.form-check-input:checked {
+  background-color: #e9762b;
+  border: 3px solid white;
+  box-shadow: 0 0 5px rgba(233, 118, 43, 0.8);
+}
+
+.btn-place-order {
+  border-color: #e9762b !important;
+  background-color: #e9762b !important;
+  color: #fff;
+}

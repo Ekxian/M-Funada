@@ -1,5 +1,6 @@
 import React from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 import SL1 from "../../assets/SL1.png";
 import IK1 from "../../assets/IK1.png";
@@ -194,18 +195,27 @@ const Foods = ({ cartItems, handleAddItem, handleSubtractItem }) => {
     <div className="container my-5">
       {/* ============================ */}
       {/* SOLO MEALS */}
-      <h1 style={{ color: "#E9762B" }}>
+      <motion.h1
+        style={{ color: "#E9762B" }}
+        initial={{ opacity: 0, translateX: -50 }}
+        whileInView={{ opacity: 1, translateX: 0 }}
+        transition={{ duration: 1 }}
+      >
         <strong>Solo Meal</strong>
-      </h1>
+      </motion.h1>
       <div className="row justify-content-center">
         {soloItems.map((solo) => (
           <div
             key={solo.id}
             className="col-lg-3 col-md-4 col-sm-6 col-12 mb-4 d-flex justify-content-center"
           >
-            <div
+            <motion.div
               className="card h-100 shadow position-relative"
               style={{ width: "18rem" }}
+              initial={{ opacity: 0, translateY: 50 }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true, amount: 0.3 }} // Triggers when 30% is in view
             >
               <img
                 src={solo.image}
@@ -257,25 +267,34 @@ const Foods = ({ cartItems, handleAddItem, handleSubtractItem }) => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         ))}
       </div>
 
       {/* ============================ */}
       {/* COMBO MEALS 1*/}
-      <h1 style={{ color: "#E9762B" }}>
+      <motion.h1
+        style={{ color: "#E9762B" }}
+        initial={{ opacity: 0, translateX: -50 }}
+        whileInView={{ opacity: 1, translateX: 0 }}
+        transition={{ duration: 1 }}
+      >
         <strong>Combo Meal</strong>
-      </h1>
+      </motion.h1>
       <div className="row justify-content-center">
         {comboOneItems.map((combo) => (
           <div
             key={combo.id}
             className="col-lg-3 col-md-4 col-sm-6 col-12 mb-4 d-flex justify-content-center"
           >
-            <div
+            <motion.div
               className="card h-100 shadow position-relative"
               style={{ width: "18rem" }}
+              initial={{ opacity: 0, translateY: 50 }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true, amount: 0.3 }} // Triggers when 30% is in view
             >
               <img
                 src={combo.image}
@@ -327,22 +346,31 @@ const Foods = ({ cartItems, handleAddItem, handleSubtractItem }) => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         ))}
       </div>
 
       {/* ============================ */}
       {/* COMBO MEALS 2*/}
-      <div className="row justify-content-center">
+      <div
+        className="row justify-content-center"
+        initial={{ opacity: 0, translateY: 50 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        transition={{ duration: 1 }}
+      >
         {comboTwoItems.map((combo) => (
           <div
             key={combo.id}
             className="col-lg-3 col-md-4 col-sm-6 col-12 mb-4 d-flex justify-content-center"
           >
-            <div
+            <motion.div
               className="card h-100 shadow position-relative"
               style={{ width: "18rem" }}
+              initial={{ opacity: 0, translateY: 50 }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true, amount: 0.3 }} // Triggers when 30% is in view
             >
               <img
                 src={combo.image}
@@ -394,25 +422,34 @@ const Foods = ({ cartItems, handleAddItem, handleSubtractItem }) => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         ))}
       </div>
 
       {/* ============================ */}
       {/* BUNDLE MEALS 1*/}
-      <h1 style={{ color: "#E9762B" }}>
+      <motion.h1
+        style={{ color: "#E9762B" }}
+        initial={{ opacity: 0, translateX: -50 }}
+        whileInView={{ opacity: 1, translateX: 0 }}
+        transition={{ duration: 1 }}
+      >
         <strong>Bundle Meal</strong>
-      </h1>
+      </motion.h1>
       <div className="row justify-content-center">
         {bundleItems.map((bundle) => (
           <div
             key={bundle.id}
             className="col-lg-3 col-md-4 col-sm-6 col-12 mb-4 d-flex justify-content-center"
           >
-            <div
+            <motion.div
               className="card h-100 shadow position-relative"
               style={{ width: "18rem" }}
+              initial={{ opacity: 0, translateY: 50 }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              transition={{ duration: 1 }}
+              viewport={{ once: true, amount: 0.3 }} // Triggers when 30% is in view
             >
               <img
                 src={bundle.image}
@@ -464,7 +501,7 @@ const Foods = ({ cartItems, handleAddItem, handleSubtractItem }) => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         ))}
       </div>

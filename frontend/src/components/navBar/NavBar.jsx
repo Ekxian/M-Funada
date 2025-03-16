@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link as RouterLink, useLocation } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll"; // react-scroll Link
+
 import "./navBar.css";
 import { BiSolidBasket } from "react-icons/bi";
 
@@ -31,7 +32,7 @@ const NavBar = ({ cartCount }) => {
 
       className="navbar-top navbar navbar-expand-lg position-absolute fixed-top w-100 mt-3"
     >
-      <div className="container py-1 px-5 shadow rounded">
+      <div className="container py-1 px-5">
         <RouterLink className="navbar-brand" to="/">
           <h3 style={{ color: "#E9762B" }}>
             <strong>M'Funada</strong>

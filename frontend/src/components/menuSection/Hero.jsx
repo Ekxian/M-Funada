@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import "./hero.css";
 
@@ -15,7 +16,12 @@ const Hero = () => {
       </div>
 
       <div className="container position-absolute top-50 start-50 translate-middle z-3 text-center">
-        <div className="row text-white justify-content-center">
+        <motion.div
+          className="row text-white justify-content-center"
+          initial={{ opacity: 0, translateY: 50 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 1 }}
+        >
           <div className="col-12">
             <h1 className="display-1 fw-bold">
               Order <span style={{ color: "#E9762B" }}>Here</span>
@@ -30,7 +36,7 @@ const Hero = () => {
               habitasse leo sem
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

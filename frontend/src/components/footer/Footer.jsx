@@ -1,10 +1,49 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll"; // react-scroll Link
+import { Link as RouterLink, useLocation } from "react-router-dom";
 
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa6";
 
 const Footer = () => {
+  const navigate = useNavigate();
+  const toHomeRoute = () => {
+    navigate("/");
+    window.scrollTo(0, 0);
+  };
+  const toMenuRoute = () => {
+    navigate("mfunada/menu");
+    window.scrollTo(0, 0);
+  };
+  const toAboutUsRoute = () => {
+    navigate("mfunada/about-us");
+    window.scrollTo(0, 0);
+  };
+  const toFindUsRoute = () => {
+    navigate("mfunada/about-us");
+    window.scrollTo(0, 0);
+  };
+
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="bg-black">
       <div className="container py-4">
@@ -52,32 +91,68 @@ const Footer = () => {
             <h3 style={{ color: "#E9762B" }}>
               <strong>Menu</strong>
             </h3>
-            <p className="text-white">
+            <p
+              className="text-white"
+              onClick={toHomeRoute}
+              style={{ cursor: "pointer" }}
+            >
               <small>Home</small>
             </p>
-            <p className="text-white">
+            <p
+              className="text-white"
+              onClick={toMenuRoute}
+              style={{ cursor: "pointer" }}
+            >
               <small>Menu</small>
             </p>
-            <p className="text-white">
+            <p
+              className="text-white"
+              onClick={toAboutUsRoute}
+              style={{ cursor: "pointer" }}
+            >
               <small>About Us</small>
             </p>
             <p className="text-white">
-              <small>Find Us</small>
+              {isHome ? (
+                // If already on Home, use react-scroll to smooth scroll
+                <ScrollLink
+                  className="nav-link"
+                  to="find-us"
+                  smooth={true}
+                  duration={500}
+                  offset={-70}
+                  style={{ cursor: "pointer" }}
+                >
+                  <small>Find Us</small>
+                </ScrollLink>
+              ) : (
+                // If not on Home, navigate to Home with a hash so Home's useEffect will scroll
+                <RouterLink
+                  className="nav-link"
+                  to="/#find-us"
+                  style={{ cursor: "pointer" }}
+                >
+                  <small>Find Us</small>
+                </RouterLink>
+              )}
             </p>
           </div>
           {/* Third Column */}
-          <div className="col-lg-2 col-md-6 col-12 pt-5">
+          <div className="col-lg-3 col-md-6 col-12 pt-5">
             <h3 style={{ color: "#E9762B" }}>
               <strong>Contact</strong>
             </h3>
             <p className="text-white">
-              <small>+63-910-555-6414</small>
+              <small>+63-992 264 5378</small>
             </p>
             <p className="text-white">
-              <small>mfunada@gmail.com</small>
+              <small>mfunadaest2026@gmail.com</small>
             </p>
             <p className="text-white">
-              <small>Address here</small>
+              <small>
+                4000 - A Gen. T. de Leon Corner Policarpio, Valenzuela, 1442
+                Metro Manila
+              </small>
             </p>
           </div>
         </div>

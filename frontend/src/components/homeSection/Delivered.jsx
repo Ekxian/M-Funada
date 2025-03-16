@@ -1,14 +1,27 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 import { BiSolidBasket } from "react-icons/bi";
 
 import "./delivered.css";
 
 const Delivered = () => {
+  const navigate = useNavigate();
+  const toMenuRoute = () => {
+    navigate("mfunada/menu");
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="container mt-5">
       {/* ROW 1 TITLE */}
-      <div className="row d-flex justify-content-between align-items-center">
+      <motion.div
+        className="row d-flex justify-content-between align-items-center"
+        initial={{ opacity: 0, translateY: -50 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        transition={{ duration: 1 }}
+      >
         <h1 className="col-lg-3">
           <strong>
             Best <span style={{ color: "#E9762B" }}>Delivered</span> Categories
@@ -17,15 +30,29 @@ const Delivered = () => {
         <p className="col-lg-3">
           <small>
             Here are some of our best distributed categories.
-            <span style={{ color: "#E9762B" }}> Order now!</span>
+            <span
+              style={{ color: "#E9762B", cursor: "pointer" }}
+              onClick={toMenuRoute}
+            >
+              Order now!
+            </span>
           </small>
         </p>
-      </div>
+      </motion.div>
 
       {/* ROW 2: CARDS */}
-      <div className="row my-5 justify-content-center">
+      <motion.div
+        className="row my-5 justify-content-center"
+        initial={{ opacity: 0, translateY: -50 }}
+        whileInView={{ opacity: 1, translateY: 0 }}
+        transition={{ duration: 1 }}
+      >
         {/* CARD 1 */}
-        <div className="col-lg-3 col-md-4 col-sm-6 col-12 mb-2 d-flex justify-content-center">
+        <motion.div
+          className="col-lg-3 col-md-4 col-sm-6 col-12 mb-2 d-flex justify-content-center"
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.3 }}
+        >
           <div className="card h-100 shadow" style={{ width: "18rem" }}>
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-pdH0qh12XweymWNkJZdjV-NAovekfQeaKw&s"
@@ -47,16 +74,20 @@ const Delivered = () => {
                 </small>
               </p>
               <div className="d-grid gap-2">
-                <button className="btn-basket btn">
+                <button className="btn-basket btn" onClick={toMenuRoute}>
                   <BiSolidBasket className="fs-4 text-white" />
                 </button>
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* CARD 2 */}
-        <div className="col-lg-3 col-md-4 col-sm-6 col-12 mb-2 d-flex justify-content-center">
+        <motion.div
+          className="col-lg-3 col-md-4 col-sm-6 col-12 mb-2 d-flex justify-content-center"
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.3 }}
+        >
           <div className="card h-100 shadow" style={{ width: "18rem" }}>
             <img
               src="https://hips.hearstapps.com/hmg-prod/images/chicken-empanada-1jpg-1651248642.jpg?crop=0.6794177386594448xw:1xh;center,top&resize=1200:*"
@@ -78,16 +109,20 @@ const Delivered = () => {
                 </small>
               </p>
               <div className="d-grid gap-2">
-                <button className="btn-basket btn">
+                <button className="btn-basket btn" onClick={toMenuRoute}>
                   <BiSolidBasket className="fs-4 text-white" />
                 </button>
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* CARD 3 */}
-        <div className="col-lg-3 col-md-4 col-sm-6 col-12 mb-2 d-flex justify-content-center">
+        <motion.div
+          className="col-lg-3 col-md-4 col-sm-6 col-12 mb-2 d-flex justify-content-center"
+          whileHover={{ scale: 1.1 }}
+          transition={{ duration: 0.3 }}
+        >
           <div className="card h-100 shadow" style={{ width: "18rem" }}>
             <img
               src="https://salimaskitchen.com/wp-content/uploads/2023/08/DSC01303.jpg"
@@ -109,14 +144,14 @@ const Delivered = () => {
                 </small>
               </p>
               <div className="d-grid gap-2">
-                <button className="btn-basket btn">
+                <button className="btn-basket btn" onClick={toMenuRoute}>
                   <BiSolidBasket className="fs-4 text-white" />
                 </button>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };

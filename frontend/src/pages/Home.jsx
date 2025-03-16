@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Element, scroller } from "react-scroll";
-import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import NavBar from "../components/navBar/NavBar";
 import ImageCarousel from "../components/imageCarousel/ImageCarousel";
@@ -15,6 +16,12 @@ import Taste from "../components/homeSection/Taste";
 import Mapa from "../components/homeSection/Mapa";
 
 const Home = () => {
+  const navigate = useNavigate();
+  const toMenuRoute = () => {
+    navigate("mfunada/menu");
+    window.scrollTo(0, 0);
+  };
+
   // If navigating from another page with a hash like "#find-us"
   useEffect(() => {
     if (location.hash === "#find-us") {
@@ -39,7 +46,13 @@ const Home = () => {
           //   top: "20rem", // Adjust this to position below the navbar
           // }}
         >
-          <div className="row text-white">
+          <motion.div
+            className="row text-white"
+            initial={{ opacity: 0, translateX: -50 }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 1 }}
+            // viewport={{ once: true, amount: 0.3 }} // Triggers when 30% is in view
+          >
             <h1 className="display-4 fw-bold">Order your</h1>
             <h1 className="display-4 fw-bold">
               <span className="text-warning">favorite food</span> here.
@@ -51,18 +64,22 @@ const Home = () => {
               curabitur finibus efficitur etiam morbi pretium. Id gravida cras,
               habitasse leo sem
             </p>
-          </div>
+          </motion.div>
 
-          <button
+          <motion.button
             type="button"
             className="btn-menu btn rounded-pill text-white"
             style={{ width: "150px" }}
+            onClick={toMenuRoute}
+            initial={{ opacity: 0, translateX: -50 }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 1 }}
           >
             <div className="btn-text d-flex align-items-center justify-content-center">
               <MdOutlineRestaurantMenu className="fs-4 me-2" />
               View Menu
             </div>
-          </button>
+          </motion.button>
         </div>
       </div>
 

@@ -1,22 +1,40 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 import "./taste.css";
 
 const Taste = () => {
+  const navigate = useNavigate();
+  const toAboutUsRoute = () => {
+    navigate("mfunada/about-us");
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="container my-5">
       <div className="row gx-5 justify-content-center align-items-center">
         {/* Image Section */}
-        <div className="col-12 col-lg-5 d-flex justify-content-center mb-4 mb-lg-0">
+        <motion.div
+          className="col-12 col-lg-5 d-flex justify-content-center mb-4 mb-lg-0"
+          initial={{ opacity: 0, translateX: 50 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 1 }}
+        >
           <img
             src="https://foodthinkers.com.ph/wp-content/uploads/2021/03/P030321034930_1-1500x2000.jpg"
             alt="Delicious Food"
             style={{ width: "100%", maxWidth: "400px", height: "400px" }}
           />
-        </div>
+        </motion.div>
 
         {/* Text Section */}
-        <div className="col-12 col-lg-5 text-center text-lg-start">
+        <motion.div
+          className="col-12 col-lg-5 text-center text-lg-start"
+          initial={{ opacity: 0, translateX: 50 }}
+          whileInView={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 1 }}
+        >
           <h1>
             <strong>
               The <span style={{ color: "#E9762B" }}>Taste</span> That <br />
@@ -31,10 +49,13 @@ const Taste = () => {
             sociosqu. Duis dictum semper lacinia nisi facilisi; porta vulputate.
           </p>
 
-          <button className="btn-about-us btn rounded-pill px-4 text-white">
+          <button
+            className="btn-about-us btn rounded-pill px-4 text-white"
+            onClick={toAboutUsRoute}
+          >
             More About Us
           </button>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
