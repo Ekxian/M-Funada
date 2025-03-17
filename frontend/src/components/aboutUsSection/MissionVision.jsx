@@ -11,7 +11,11 @@ const MissionVision = () => {
           whileInView={{ opacity: 1, translateY: 0 }}
           transition={{ duration: 1 }}
         >
-          <div className="p-5 shadow d-flex flex-column justify-content-between content-box">
+          <motion.div
+            className="p-5 shadow d-flex flex-column justify-content-between content-box"
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}
+          >
             <h2>
               Our <span style={{ color: "#E9762B" }}>Mission</span>
             </h2>
@@ -33,7 +37,7 @@ const MissionVision = () => {
                 cras, habitasse leo sem
               </small>
             </p>
-          </div>
+          </motion.div>
         </motion.div>
 
         <motion.div
@@ -42,7 +46,11 @@ const MissionVision = () => {
           whileInView={{ opacity: 1, translateY: 0 }}
           transition={{ duration: 1 }}
         >
-          <div className="p-5 shadow d-flex flex-column justify-content-between content-box">
+          <motion.div
+            className="p-5 shadow d-flex flex-column justify-content-between content-box"
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}
+          >
             <h2>
               Our <span style={{ color: "#E9762B" }}>Vision</span>
             </h2>
@@ -64,7 +72,7 @@ const MissionVision = () => {
                 cras, habitasse leo sem */}
               </small>
             </p>
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </div>

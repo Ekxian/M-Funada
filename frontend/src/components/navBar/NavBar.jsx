@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { Link as RouterLink, useLocation } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll"; // react-scroll Link
+import { motion } from "framer-motion";
 
 import "./navBar.css";
 import { BiSolidBasket } from "react-icons/bi";
+import LOGO from "../../assets/LOGO.jpg";
 
 const NavBar = ({ cartCount }) => {
   const location = useLocation();
@@ -34,6 +36,12 @@ const NavBar = ({ cartCount }) => {
     >
       <div className="container py-1 px-5">
         <RouterLink className="navbar-brand" to="/">
+          <img
+            src={LOGO}
+            alt="Logo"
+            className="rounded"
+            style={{ height: "40px", marginRight: "10px" }}
+          />
           <h3 style={{ color: "#E9762B" }}>
             <strong>M'Funada</strong>
           </h3>
@@ -51,25 +59,42 @@ const NavBar = ({ cartCount }) => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-center">
-            <li className="nav-item-css nav-item me-4">
+            <motion.li
+              className="nav-item-css nav-item me-4"
+              whileHover={{ translateY: -5 }}
+              transition={{ duration: 0.3 }}
+            >
               <RouterLink className="nav-link text-warning" to="/">
                 Home
               </RouterLink>
-            </li>
-            <li className="nav-item-css nav-item me-4">
+            </motion.li>
+            <motion.li
+              className="nav-item-css nav-item me-4"
+              whileHover={{ translateY: -5 }}
+              transition={{ duration: 0.3 }}
+            >
               <RouterLink className="nav-link text-warning" to="/mfunada/menu">
                 Menu
               </RouterLink>
-            </li>
-            <li className="nav-item-css nav-item me-4">
+            </motion.li>
+            <motion.li
+              className="nav-item-css nav-item me-4"
+              whileHover={{ translateY: -5 }}
+              transition={{ duration: 0.3 }}
+            >
               <RouterLink
                 className="nav-link text-warning"
                 to="/mfunada/about-us"
               >
                 About Us
               </RouterLink>
-            </li>
-            <li className="nav-item-css nav-item me-4">
+            </motion.li>
+            <motion.li
+              className="nav-item-css nav-item me-4"
+              whileHover={{ translateY: -5 }}
+              transition={{ duration: 0.3 }}
+              style={{ cursor: "pointer" }}
+            >
               {isHome ? (
                 // If already on Home, use react-scroll to smooth scroll
                 <ScrollLink
@@ -87,7 +112,7 @@ const NavBar = ({ cartCount }) => {
                   Find Us
                 </RouterLink>
               )}
-            </li>
+            </motion.li>
           </ul>
           <RouterLink to="/mfunada/orders">
             <button

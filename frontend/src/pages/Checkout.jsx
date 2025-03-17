@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
+
 import Footer from "../components/footer/Footer";
 
 import "../pages/css/checkout.css";
@@ -17,7 +19,12 @@ const Checkout = ({
     <div>
       <div className="container my-5 pt-5">
         <div className="row d-flex align-items-center justify-content-center">
-          <div className="col-lg-6 shadow p-5">
+          <motion.div
+            className="col-lg-6 shadow p-5"
+            initial={{ opacity: 0, translateY: 50 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 1 }}
+          >
             <h2>
               <strong>
                 Delivery <span style={{ color: "#E9762B" }}>Information</span>
@@ -81,9 +88,14 @@ const Checkout = ({
                 placeholder="Phone Number"
               />
             </div>
-          </div>
+          </motion.div>
 
-          <div className="col-lg-6 p-5">
+          <motion.div
+            className="col-lg-6 p-5"
+            initial={{ opacity: 0, translateX: 70 }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 1 }}
+          >
             <h3>
               <strong>
                 Order <span style={{ color: "#E9762B" }}>Total</span>
@@ -163,7 +175,7 @@ const Checkout = ({
             >
               Place Order
             </button>
-          </div>
+          </motion.div>
         </div>
       </div>
       <Footer />

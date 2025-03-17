@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import { FaTrash } from "react-icons/fa";
 
@@ -27,7 +28,12 @@ const Orders = ({
   return (
     <div>
       <div className="container mt-5 pt-5">
-        <div className="row shadow p-5 mt-3 table-responsive">
+        <motion.div
+          className="row shadow p-5 mt-3 table-responsive"
+          initial={{ opacity: 0, translateY: 50 }}
+          whileInView={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 1 }}
+        >
           <h1 className="mb-3">
             <strong>
               Your <span style={{ color: "#E9762B" }}>Orders</span>
@@ -96,10 +102,15 @@ const Orders = ({
           ) : (
             <p className="text-muted">Your cart is empty.</p>
           )}
-        </div>
+        </motion.div>
         {/* Order Summary Section */}
         <div className="mb-5">
-          <div className="row mt-4">
+          <motion.div
+            className="row mt-4"
+            initial={{ opacity: 0, translateY: 50 }}
+            whileInView={{ opacity: 1, translateY: 0 }}
+            transition={{ duration: 1 }}
+          >
             <div className="col-lg-6 shadow p-5">
               <h3>
                 <strong>
@@ -172,7 +183,7 @@ const Orders = ({
                 </ul>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
       <Footer />
