@@ -43,7 +43,7 @@ const NavBar = ({ cartCount }) => {
             style={{ height: "40px", marginRight: "10px" }}
           />
           <h3 style={{ color: "#E9762B" }}>
-            <strong>M'Funada</strong>
+            <strong>M'FUNada</strong>
           </h3>
         </RouterLink>
         <button

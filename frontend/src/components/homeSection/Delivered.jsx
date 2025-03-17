@@ -22,7 +22,7 @@ const Delivered = () => {
         whileInView={{ opacity: 1, translateY: 0 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="col-lg-3">
+        <h1 className="col-lg-4">
           <strong>
             Best <span style={{ color: "#E9762B" }}>Delivered</span> Categories
           </strong>
