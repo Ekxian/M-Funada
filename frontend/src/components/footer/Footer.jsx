@@ -72,18 +72,30 @@ const Footer = () => {
                   <FaFacebookF className="text-dark" />
                 </div>
               </a>
-              <div
-                className="bg-white rounded-circle d-flex justify-content-center align-items-center"
-                style={{ width: "25px", height: "25px" }}
+              <a
+                href="https://www.instagram.com/mfunada_est2026/"
+                target="_blank"
+                className="text-decoration-none"
               >
-                <FaInstagram className="text-dark" />
-              </div>
-              <div
-                className="bg-white rounded-circle d-flex justify-content-center align-items-center"
-                style={{ width: "25px", height: "25px" }}
+                <div
+                  className="bg-white rounded-circle d-flex justify-content-center align-items-center"
+                  style={{ width: "25px", height: "25px" }}
+                >
+                  <FaInstagram className="text-dark" />
+                </div>
+              </a>
+              <a
+                href="https://www.tiktok.com/@mfunada2026"
+                target="_blank"
+                className="text-decoration-none"
               >
-                <FaTiktok className="text-dark" />
-              </div>
+                <div
+                  className="bg-white rounded-circle d-flex justify-content-center align-items-center"
+                  style={{ width: "25px", height: "25px" }}
+                >
+                  <FaTiktok className="text-dark" />
+                </div>
+              </a>
             </div>
           </div>
           {/* Second Column */}
