@@ -29,11 +29,12 @@ const Hero = () => {
           </div>
           <div className="col-lg-5 col-md-6 col-sm-12 mx-auto">
             <p>
-              Lorem ipsum odor amet, consectetuer adipiscing elit. Lacus nunc
-              est volutpat nisl suscipit hendrerit ultricies. Condimentum
-              euismod nibh efficitur; morbi sagittis scelerisque. Mus tempor
-              curabitur finibus efficitur etiam morbi pretium. Id gravida cras,
-              habitasse leo sem
+              At M'FUNada, we're more than just empanadas. We're a movement of
+              flavor, culture, and purpose. Born out of passion and innovation,
+              we fused the health benefits of malunggay with bold global flavors
+              like shawarma and kimchi to bring you empanadas that are uniquely
+              Filipino with an international twist. Every bite is a celebration
+              of diversity, ambition, and love for food.
             </p>
           </div>
         </motion.div>

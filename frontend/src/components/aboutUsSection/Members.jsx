@@ -5,77 +5,80 @@ import "react-photo-view/dist/react-photo-view.css";
 
 import "./members.css";
 
+import ORG from "../../assets/ORG.png";
+
+import MEM1 from "../../assets/MEM1.jpg";
+import MEM2 from "../../assets/MEM2.jpg";
+import MEM3 from "../../assets/MEM3.jpg";
+import MEM4 from "../../assets/MEM4.jpg";
+import MEM5 from "../../assets/MEM5.jpg";
+import MEM6 from "../../assets/MEM6.jpg";
+import MEM7 from "../../assets/MEM7.png";
+import MEM8 from "../../assets/MEM8.jpg";
+import MEM9 from "../../assets/MEM9.jpg";
+import MEM10 from "../../assets/MEM10.jpg";
+
 const Members = () => {
   const feasibMembers = [
     {
       id: 1,
-      image:
-        "https://i.pinimg.com/736x/fe/ef/c3/feefc35e4614590ea6ee2c44252a14ae.jpg",
-      name: "Mary Ayen G. Opague",
-      role: "Thesis Leader",
+      image: MEM1,
+      name: "Angel Chloe Bardaje",
+      role: "General Partner",
     },
     {
       id: 2,
-      image:
-        "https://i.pinimg.com/736x/fe/ef/c3/feefc35e4614590ea6ee2c44252a14ae.jpg",
-      name: "Mary Ayen G. Opague",
-      role: "Thesis Leader",
+      image: MEM2,
+      name: "Mea Caberte",
+      role: "Limited Partner",
     },
     {
       id: 3,
-      image:
-        "https://i.pinimg.com/736x/fe/ef/c3/feefc35e4614590ea6ee2c44252a14ae.jpg",
-      name: "Mary Ayen G. Opague",
-      role: "Thesis Leader",
+      image: MEM3,
+      name: "Paula Marie Canlas",
+      role: "General Partner",
     },
     {
       id: 4,
-      image:
-        "https://i.pinimg.com/736x/fe/ef/c3/feefc35e4614590ea6ee2c44252a14ae.jpg",
-      name: "Mary Ayen G. Opague",
-      role: "Thesis Leader",
+      image: MEM4,
+      name: "Louis Eugene Clarinan",
+      role: "Limited Partner",
     },
     {
       id: 5,
-      image:
-        "https://i.pinimg.com/736x/fe/ef/c3/feefc35e4614590ea6ee2c44252a14ae.jpg",
-      name: "Mary Ayen G. Opague",
-      role: "Thesis Leader",
+      image: MEM5,
+      name: "Elisha Dela Cruz",
+      role: "Managing Partner",
     },
     {
       id: 6,
-      image:
-        "https://i.pinimg.com/736x/fe/ef/c3/feefc35e4614590ea6ee2c44252a14ae.jpg",
-      name: "Mary Ayen G. Opague",
-      role: "Thesis Leader",
+      image: MEM6,
+      name: "Christine May Hieto",
+      role: "General Partner",
     },
     {
       id: 7,
-      image:
-        "https://i.pinimg.com/736x/fe/ef/c3/feefc35e4614590ea6ee2c44252a14ae.jpg",
-      name: "Mary Ayen G. Opague",
-      role: "Thesis Leader",
+      image: MEM7,
+      name: "Mary Ayen Opague",
+      role: "General Partner",
     },
     {
       id: 8,
-      image:
-        "https://i.pinimg.com/736x/fe/ef/c3/feefc35e4614590ea6ee2c44252a14ae.jpg",
-      name: "Mary Ayen G. Opague",
-      role: "Thesis Leader",
+      image: MEM8,
+      name: "Christine Mae Ramirez",
+      role: "General Partner",
     },
     {
       id: 9,
-      image:
-        "https://i.pinimg.com/736x/fe/ef/c3/feefc35e4614590ea6ee2c44252a14ae.jpg",
-      name: "Mary Ayen G. Opague",
-      role: "Thesis Leader",
+      image: MEM9,
+      name: "John Mathew Soldevilla",
+      role: "Limited Partner",
     },
     {
       id: 10,
-      image:
-        "https://i.pinimg.com/736x/fe/ef/c3/feefc35e4614590ea6ee2c44252a14ae.jpg",
-      name: "Mary Ayen G. Opague",
-      role: "Thesis Leader",
+      image: MEM10,
+      name: "Jozyl Ucag",
+      role: "General Partner",
     },
   ];
 
@@ -92,7 +95,7 @@ const Members = () => {
         </strong>
       </motion.h1>
       <motion.div
-        className="row justify-content-center mx-5"
+        className="row justify-content-center"
         initial={{ opacity: 0, translateY: 50 }}
         whileInView={{ opacity: 1, translateY: 0 }}
         transition={{ duration: 1 }}
@@ -104,25 +107,27 @@ const Members = () => {
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
           >
-            <PhotoProvider>
-              <PhotoView src={member.image}>
-                <img
-                  src={member.image}
-                  className="card-img-top"
-                  style={{
-                    width: "14rem",
-                    height: "14rem",
-                    objectFit: "cover",
-                  }}
-                  alt="..."
-                />
-              </PhotoView>
-            </PhotoProvider>
-            <p className="" style={{ color: "#E9762B" }}>
-              <strong>{member.name}</strong>
-              <br />
-              <small>{member.role}</small>
-            </p>
+            <div className="text-center">
+              <PhotoProvider>
+                <PhotoView src={member.image}>
+                  <img
+                    src={member.image}
+                    className="card-img-top mx-auto"
+                    style={{
+                      width: "14rem",
+                      height: "14rem",
+                      objectFit: "cover",
+                    }}
+                    alt="..."
+                  />
+                </PhotoView>
+              </PhotoProvider>
+              <p className="" style={{ color: "#E9762B" }}>
+                <strong>{member.name}</strong>
+                <br />
+                <small>{member.role}</small>
+              </p>
+            </div>
           </motion.div>
         ))}
       </motion.div>
@@ -140,15 +145,15 @@ const Members = () => {
       </motion.h1>
 
       <motion.div
-        className="d-flex justify-content-center border"
+        className="d-flex justify-content-center"
         whileHover={{ scale: 1.1 }}
         transition={{ duration: 0.3 }}
       >
-        <img
-          className=" w-50"
-          src="https://www.liveabout.com/thmb/A6M9w9-iPwNGI7_s3urch4gaAYY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-514319435-569fda2c5f9b58eba4ad79db.jpg"
-          alt=""
-        />
+        <PhotoProvider>
+          <PhotoView src={ORG}>
+            <img className=" w-50" src={ORG} alt="" />
+          </PhotoView>
+        </PhotoProvider>
       </motion.div>
     </div>
   );

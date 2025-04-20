@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 
 import "./taste.css";
 
+import IN1 from "../../assets/IN1.png";
+
 const Taste = () => {
   const navigate = useNavigate();
   const toAboutUsRoute = () => {
@@ -22,7 +24,7 @@ const Taste = () => {
           transition={{ duration: 1 }}
         >
           <img
-            src="https://foodthinkers.com.ph/wp-content/uploads/2021/03/P030321034930_1-1500x2000.jpg"
+            src={IN1}
             alt="Delicious Food"
             style={{ width: "100%", maxWidth: "400px", height: "400px" }}
           />
@@ -42,11 +44,11 @@ const Taste = () => {
             </strong>
           </h1>
           <p className="w-100 w-lg-75 mx-auto">
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Lacus nunc est
-            volutpat nisl suscipit hendrerit ultricies. Condimentum euismod nibh
-            efficitur; morbi sagittis scelerisque. Mus tempor curabitur finibus
-            efficitur etiam morbi pretium. Id gravida cras, habitasse leo sem
-            sociosqu. Duis dictum semper lacinia nisi facilisi; porta vulputate.
+            Craving something new and exciting? At M'FUNada, we bring you
+            empanadas like no other. Made with malunggay-infused dough and
+            bursting with bold, international flavors like shawarma and kimchi.
+            Healthy, flavorful, and proudly local that every bite tells a story
+            of passion, creativity, and Filipino pride.
           </p>
 
           <button

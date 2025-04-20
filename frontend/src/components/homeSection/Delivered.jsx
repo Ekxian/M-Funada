@@ -6,6 +6,10 @@ import { BiSolidBasket } from "react-icons/bi";
 
 import "./delivered.css";
 
+import MENU1 from "../../assets/MENU1.jpg";
+import MENU2 from "../../assets/MENU2.jpg";
+import MENU3 from "../../assets/MENU3.jpg";
+
 const Delivered = () => {
   const navigate = useNavigate();
   const toMenuRoute = () => {
@@ -55,22 +59,23 @@ const Delivered = () => {
         >
           <div className="card h-100 shadow" style={{ width: "18rem" }}>
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-pdH0qh12XweymWNkJZdjV-NAovekfQeaKw&s"
+              src={MENU1}
               className="card-img-top"
               style={{ width: "100%", height: "18rem", objectFit: "cover" }}
               alt="..."
             />
             <div className="card-body">
               <div className="d-flex justify-content-between">
-                <h5 className="card-title">Ikinamada</h5>
+                <h5 className="card-title">M'FUNada Ala Carte</h5>
                 <h5 className="card-title" style={{ color: "#e9762b" }}>
                   <strong>₱59</strong>
                 </h5>
               </div>
               <p className="card-text">
                 <small>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Savor our signature moringga empanadas made fresh and
+                  flavorful, perfect for a quick, satisfying bite. A simple
+                  treat that hits the tasty spot.
                 </small>
               </p>
               <div className="d-grid gap-2">
@@ -90,22 +95,23 @@ const Delivered = () => {
         >
           <div className="card h-100 shadow" style={{ width: "18rem" }}>
             <img
-              src="https://hips.hearstapps.com/hmg-prod/images/chicken-empanada-1jpg-1651248642.jpg?crop=0.6794177386594448xw:1xh;center,top&resize=1200:*"
+              src={MENU2}
               className="card-img-top"
               style={{ width: "100%", height: "18rem", objectFit: "cover" }}
               alt="..."
             />
             <div className="card-body">
               <div className="d-flex justify-content-between">
-                <h5 className="card-title">Ikinamada</h5>
+                <h5 className="card-title">Combo Meal</h5>
                 <h5 className="card-title" style={{ color: "#e9762b" }}>
-                  <strong>₱59</strong>
+                  <strong>₱99</strong>
                 </h5>
               </div>
               <p className="card-text">
                 <small>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Enjoy the ultimate combo of our signature empanadas paired
+                  with your choice of side and a refreshing drink for a fuller
+                  meal.
                 </small>
               </p>
               <div className="d-grid gap-2">
@@ -125,22 +131,22 @@ const Delivered = () => {
         >
           <div className="card h-100 shadow" style={{ width: "18rem" }}>
             <img
-              src="https://salimaskitchen.com/wp-content/uploads/2023/08/DSC01303.jpg"
+              src={MENU3}
               className="card-img-top"
               style={{ width: "100%", height: "18rem", objectFit: "cover" }}
               alt="..."
             />
             <div className="card-body">
               <div className="d-flex justify-content-between">
-                <h5 className="card-title">Ikinamada</h5>
+                <h5 className="card-title">M'FUNada Bundle</h5>
                 <h5 className="card-title" style={{ color: "#e9762b" }}>
-                  <strong>₱59</strong>
+                  <strong>₱219</strong>
                 </h5>
               </div>
               <p className="card-text">
                 <small>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Get more for less with our M’FUNada bundle, ideal for sharing
+                  or satisfying bigger cravings, packed with flavor and value.
                 </small>
               </p>
               <div className="d-grid gap-2">

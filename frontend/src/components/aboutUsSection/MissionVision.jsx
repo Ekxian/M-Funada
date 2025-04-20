@@ -21,20 +21,13 @@ const MissionVision = () => {
             </h2>
             <p>
               <small>
-                Lorem ipsum odor amet, consectetuer adipiscing elit. Lacus nunc
-                est volutpat nisl suscipit hendrerit ultricies. Condimentum
-                euismod nibh efficitur; morbi sagittis scelerisque. Mus tempor
-                curabitur finibus efficitur etiam morbi pretium. Id gravida
-                cras, habitasse leo sem
-              </small>
-            </p>
-            <p>
-              <small>
-                Lorem ipsum odor amet, consectetuer adipiscing elit. Lacus nunc
-                est volutpat nisl suscipit hendrerit ultricies. Condimentum
-                euismod nibh efficitur; morbi sagittis scelerisque. Mus tempor
-                curabitur finibus efficitur etiam morbi pretium. Id gravida
-                cras, habitasse leo sem
+                To create something unforgettable for our customers to enjoy
+                that is new to their preferences, we are ambitious in combining
+                different cultures to present them with the finest possible
+                experience. Our goal is to provide something surprising to our
+                menu options while being easily accessible to everyone. We wish
+                to inspire the infusion of our creativity by providing something
+                culturally unique.
               </small>
             </p>
           </motion.div>
@@ -56,11 +49,11 @@ const MissionVision = () => {
             </h2>
             <p>
               <small>
-                Lorem ipsum odor amet, consectetuer adipiscing elit. Lacus nunc
-                est volutpat nisl suscipit hendrerit ultricies. Condimentum
-                euismod nibh efficitur; morbi sagittis scelerisque. Mus tempor
-                curabitur finibus efficitur etiam morbi pretium. Id gravida
-                cras, habitasse leo sem
+                To be the premier empanada brand, renowned for unique blend of
+                cultures, innovations, and setting the standard in flavor and
+                quality. By partnering with local suppliers, valuing our
+                employees, and creating exciting promotions, every bite becomes
+                a journey of discovery and meaningful connection.
               </small>
             </p>
             <p>

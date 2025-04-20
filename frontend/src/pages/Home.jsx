@@ -58,11 +58,13 @@ const Home = () => {
               <span className="text-warning">favorite food</span> here.
             </h1>
             <p className="col-lg-5 col-md-6 col-sm-12">
-              Lorem ipsum odor amet, consectetuer adipiscing elit. Lacus nunc
-              est volutpat nisl suscipit hendrerit ultricies. Condimentum
-              euismod nibh efficitur; morbi sagittis scelerisque. Mus tempor
-              curabitur finibus efficitur etiam morbi pretium. Id gravida cras,
-              habitasse leo sem
+              Craving something unique, flavorful, and satisfying? At M'FUNada,
+              we serve empanadas like no other, packed with bold international
+              flavors like Shawarma and Kimchi, infused with nutritious
+              moringga, and cooked to golden perfection.
+            </p>
+            <p className="lead">
+              <em>“SHA bawat kagat, K-sarap!”</em>
             </p>
           </motion.div>
 

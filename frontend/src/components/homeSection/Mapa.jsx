@@ -37,10 +37,7 @@ const Mapa = () => {
             </strong>
           </p>
           <p>
-            <small>
-              4000 - A Gen. T. de Leon Corner Policarpio, Valenzuela, 1442 Metro
-              Manila
-            </small>
+            <small>52 Gen. T. de Leon, Valenzuela, 1441 Metro Manila</small>
           </p>
         </div>
         <div className="col-lg-3 col-md-6 col-sm-12">
@@ -59,7 +56,7 @@ const Mapa = () => {
       </motion.div>
       <div className="row">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.482985044137!2d120.98820517457445!3d14.685257274999493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b6a9095c5e89%3A0x6c7f3f02b9c0e619!2s4000%20-%20A%20Gen.%20T.%20de%20Leon%20Corner%20Policarpio%2C%20Valenzuela%2C%201442%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1741278053532!5m2!1sen!2sph"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.463012761683!2d120.99453450000001!3d14.686388599999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b6ac1e3d536b%3A0x2225ffd2760758a8!2s52%20Gen.%20T.%20de%20Leon%2C%20Valenzuela%2C%201441%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1745130359268!5m2!1sen!2sph"
           width="600"
           height="450"
           style={{ border: "0" }}

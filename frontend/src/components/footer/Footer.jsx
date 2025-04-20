@@ -14,15 +14,15 @@ const Footer = () => {
     window.scrollTo(0, 0);
   };
   const toMenuRoute = () => {
-    navigate("mfunada/menu");
+    navigate("/mfunada/menu");
     window.scrollTo(0, 0);
   };
   const toAboutUsRoute = () => {
-    navigate("mfunada/about-us");
+    navigate("/mfunada/about-us");
     window.scrollTo(0, 0);
   };
   const toFindUsRoute = () => {
-    navigate("mfunada/about-us");
+    navigate("/mfunada/about-us");
     window.scrollTo(0, 0);
   };
 
@@ -161,10 +161,7 @@ const Footer = () => {
               <small>mfunadaest2026@gmail.com</small>
             </p>
             <p className="text-white">
-              <small>
-                4000 - A Gen. T. de Leon Corner Policarpio, Valenzuela, 1442
-                Metro Manila
-              </small>
+              <small>52 Gen. T. de Leon, Valenzuela, 1441 Metro Manila</small>
             </p>
           </div>
         </div>

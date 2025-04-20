@@ -1,6 +1,10 @@
 import React from "react";
 import "./imageCarousel.css";
 
+import IMGS1 from "../../assets/IMGS1.png";
+import IMGS2 from "../../assets/IMGS2.png";
+import IMGS3 from "../../assets/IMGS3.png";
+
 const ImageCarousel = () => {
   return (
     <div>
@@ -34,21 +38,21 @@ const ImageCarousel = () => {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img
-              src="https://media.istockphoto.com/id/1161677008/photo/latin-american-fried-empanadas-with-tomato-and-avocado-sauces-top-view.jpg?s=612x612&w=0&k=20&c=zkj70xzhKcLUHB5Bq47qnoAoqFFxXJMBwD6zBnQ3YTY="
+              src={IMGS1}
               className="d-block w-100 carousel-height"
               alt="..."
             />
           </div>
           <div className="carousel-item">
             <img
-              src="https://placehold.co/600x400"
+              src={IMGS2}
               className="d-block w-100 carousel-height"
               alt="..."
             />
           </div>
           <div className="carousel-item">
             <img
-              src="https://placehold.co/600x400"
+              src={IMGS3}
               className="d-block w-100 carousel-height"
               alt="..."
             />

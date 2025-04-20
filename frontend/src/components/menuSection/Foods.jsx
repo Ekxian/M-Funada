@@ -90,7 +90,7 @@ const Foods = ({ cartItems, handleAddItem, handleSubtractItem }) => {
       code: "SL4",
       product:
         "Sharapanada w/ Avocado Juice, Potato French Fries, & Shawarma Sauce",
-      price: 75,
+      price: 99,
       image: SL4,
       description:
         "A crunchy Sharapanada M'FUNada served with golden fries, refreshing avocado juice, and bold garlicky shawarma sauce for a deliciously balanced meal.",
@@ -99,7 +99,7 @@ const Foods = ({ cartItems, handleAddItem, handleSubtractItem }) => {
       id: 8,
       code: "SL5",
       product: "Sharapanada w/ Mango Juice, Fried Plantain, & Shawarma Sauce",
-      price: 75,
+      price: 99,
       image: SL5,
       description:
         "Enjoy a crispy Sharapanada M'FUNada with sweet fried plantains, tropical mango juice, and rich, aromatic shawarma sauce for a flavorful, satisfying combo.",
@@ -108,7 +108,7 @@ const Foods = ({ cartItems, handleAddItem, handleSubtractItem }) => {
       id: 9,
       code: "SL6",
       product: "Sharapanada w/ Avocado Juice, Fried Plantain, & Shawarma Sauce",
-      price: 75,
+      price: 99,
       image: SL6,
       description:
         "Savor a crunchy Sharapanada M'FUNada with caramelized plantains, smooth avocado juice, and zesty shawarma sauce for a well-rounded and filling meal.",
@@ -118,7 +118,7 @@ const Foods = ({ cartItems, handleAddItem, handleSubtractItem }) => {
       code: "SL7",
       product:
         "Sharapanada w/ Mango Juice, Potato French Fries, & Shawarma Sauce",
-      price: 75,
+      price: 99,
       image: SL7,
       description:
         "A crispy Sharapanada M'FUNada paired with crispy fries, sweet mango juice, and creamy shawarma sauce—an irresistible mix of textures and bold flavors.",
@@ -127,7 +127,7 @@ const Foods = ({ cartItems, handleAddItem, handleSubtractItem }) => {
       id: 11,
       code: "IK4",
       product: "Ikinamada w/ Avocado Juice, Fried Plantain, & Cheese Sauce",
-      price: 75,
+      price: 99,
       image: IK4,
       description:
         "The rich and savory Ikinamada M'FUNada is paired with creamy cheese sauce, sweet fried plantains, and smooth avocado juice for a delightful meal.",
@@ -136,7 +136,7 @@ const Foods = ({ cartItems, handleAddItem, handleSubtractItem }) => {
       id: 12,
       code: "IK5",
       product: "Ikinamada w/  Mango Juice, Potato French Fries, & Cheese Sauce",
-      price: 75,
+      price: 99,
       image: IK5,
       description:
         "Satisfy your cravings with an Ikinamada M'FUNada, served with velvety cheese sauce, crisp potato fries, and mango juice for a deliciously complete meal.",
@@ -145,7 +145,7 @@ const Foods = ({ cartItems, handleAddItem, handleSubtractItem }) => {
       id: 13,
       code: "IK6",
       product: "Ikinamada w/ Mango Juice, Fried Plantain, and Cheese Sauce",
-      price: 75,
+      price: 99,
       image: IK6,
       description:
         "Enjoy the savory Ikinamada M'FUNada with luscious cheese sauce, caramelized plantains, and mango juice—a delicious contrast of flavors in every bite.",
@@ -155,7 +155,7 @@ const Foods = ({ cartItems, handleAddItem, handleSubtractItem }) => {
       code: "IK7",
       product:
         "Ikinamada w/ Avocado Juice, Potato French Fries, and Cheese Sauce",
-      price: 75,
+      price: 99,
       image: IK7,
       description:
         "A flavorful Ikinamada M'FUNada with creamy cheese sauce, crispy fries, and avocado juice creates a well-balanced, indulgent, and refreshing meal",
@@ -167,7 +167,7 @@ const Foods = ({ cartItems, handleAddItem, handleSubtractItem }) => {
       id: 15,
       code: "BU1",
       product: "4pcs of Sharapanada w/ Shawarma Sauce",
-      price: 75,
+      price: 219,
       image: BU1,
       description:
         "Our M'FUNada Sharapanada is a delightful twist on our signature M'FUNada, available in a bundle of four per box. Wrapped in our unique moringa (malunggay) empanada dough, it’s filled with a savory blend of seasoned ground pork, crisp cucumber, juicy tomato, and onion.",
@@ -176,7 +176,7 @@ const Foods = ({ cartItems, handleAddItem, handleSubtractItem }) => {
       id: 16,
       code: "BU2",
       product: "4pcs of Ikinamada  w/ Cheese Sauce",
-      price: 75,
+      price: 219,
       image: BU2,
       description:
         "The M'FUNada Ikinamada is a bold and flavorful delicacy with a hint of spice. Each box contains four pieces, featuring marinated pork infused with a balanced mix of savory, salty, sour, and spicy flavors, along with tangy fermented vegetables.",
@@ -185,7 +185,7 @@ const Foods = ({ cartItems, handleAddItem, handleSubtractItem }) => {
       id: 17,
       code: "BU3",
       product: "4pcs Assorted M'Funada w/ sauce of your choosing",
-      price: 75,
+      price: 219,
       image: BU3,
       description:
         "This bundle lets you enjoy both varieties of our moringa empanadas—Sharapanada and Ikinamada. Customers can mix and match their preferred flavors, choosing four pieces per box.",
