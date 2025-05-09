@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import GP from "../../assets/Gp.jpg";
+import GP from "../../assets/GP.jpg";
 
 import "./hero.css";
 
