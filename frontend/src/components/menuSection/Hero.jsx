@@ -29,11 +29,10 @@ const Hero = () => {
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12 mx-auto">
             <p>
-              Lorem ipsum odor amet, consectetuer adipiscing elit. Lacus nunc
-              est volutpat nisl suscipit hendrerit ultricies. Condimentum
-              euismod nibh efficitur; morbi sagittis scelerisque. Mus tempor
-              curabitur finibus efficitur etiam morbi pretium. Id gravida cras,
-              habitasse leo sem
+              Craving something delicious? Browse our menu and place your order
+              below. We’ve got something for every craving—whether you're in the
+              mood for something hearty, healthy, or sweet. Every dish is made
+              fresh, packed with flavor, and ready to satisfy.
             </p>
           </div>
         </motion.div>

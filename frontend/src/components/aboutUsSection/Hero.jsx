@@ -1,17 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+import GP from "../../assets/Gp.jpg";
+
 import "./hero.css";
 
 const Hero = () => {
   return (
     <div>
       <div>
-        <img
-          src="https://studentsforlife.org/wp-content/uploads/2021/12/NLC-Day-3-64.jpg"
-          alt=""
-          className="group-image-height d-block w-100"
-        />
+        <img src={GP} alt="" className="group-image-height d-block w-100" />
         <div className="group-image-overlay"></div> {/* Overlay div */}
       </div>
 
